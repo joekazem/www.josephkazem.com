@@ -1,22 +1,76 @@
-body {
-    background-color: black;
-    background-repeat: no-repeat;
+*{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box; 
+}
+.header {
+    margin-bottom: 15px;
+    background-color: #EAEFBD;
+    background-size: cover;
+    border: 10px;
+    border-color: aquamarine;
+    
+}
+.image {
+   display: block;
+    border-radius: 100px;
+    width: 200px;
+    height: 200px;
+    
+}
+.text-box {
+    position: absolute;
+    top: 45px;
+    
+    left: 325px;
+    color: #EC6E71;
+    font-size: 45px;
+    font-weight: 500;
+    letter-spacing: 12px;
+    text-shadow: 14px;
+    animation-name: bounce;
+    
+}
+@keyframes bounce {
+    { transform: translate: (100%);
+    }
+}
+.tabs li {
+    float: left;
+    position: relative;
    
 }
-.head {
-    width: 100%;
-    height: 350px;
-    background-color: #F7CB15;
-    text-align: center;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 32px;
-    font-weight: 400;
-    position: relative;
-    top: 200px;
+.tabs a {
+    float: left;
+    padding: 10px 70px;
+    text-decoration: none;
+    
+    -webkit-border-top-left-radius: 20px;
+  -webkit-border-top-right-radius: 2px;
+  -moz-border-radius-topleft: 20px;
+  -moz-border-radius-topright: 20px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px; 
+
+}
+.tabs .active a {
+z-index: 3;
 }
 .photo {
-    border-color: #F55D3E;
-    position: relative;
-    top: 20px;
-    left: 500px;
+    background-color: #8FE388 ;
+}
+.active {
+    background-color: #4F86C6;
+}
+.port {
+    background-color: #F3E37C;
+}
+.resume {
+    background-color: #A1674A;
+}
+.contact {
+    background-color: #BDB246;
+}
+.git {
+    background-color: #E07A5F;
 }
