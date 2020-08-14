@@ -1,4 +1,4 @@
-*{
+* {
    margin: 0;
    padding: 0;
    box-sizing: border-box; 
@@ -28,32 +28,29 @@
     font-weight: 500;
     letter-spacing: 12px;
     text-shadow: 14px;
-    animation-name: bounce;
+    
     
 }
-@keyframes bounce {
-    { transform: translate: (100%);
-    }
-}
+
 .tabs li {
     float: left;
     position: relative;
    
 }
-.tabs a {
+.tabs button {
     float: left;
     padding: 10px 70px;
     text-decoration: none;
     
     -webkit-border-top-left-radius: 20px;
-  -webkit-border-top-right-radius: 2px;
+  -webkit-border-top-right-radius: 5px;
   -moz-border-radius-topleft: 20px;
-  -moz-border-radius-topright: 20px;
+  -moz-border-radius-topright: 5px;
   border-top-left-radius: 20px;
-  border-top-right-radius: 20px; 
+  border-top-right-radius: 5px; 
 
 }
-.tabs .active a {
+.tabs .active button {
 z-index: 3;
 }
 .photo {
@@ -73,4 +70,26 @@ z-index: 3;
 }
 .git {
     background-color: #E07A5F;
+}
+
+.hidden {
+display: none;
+}
+body {
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    min-height: 100%;
+
+    
+}
+body .container {
+    display: flex;
+    flex-direction: column;
+    
+    }   
+body .tabContent {
+    background-color: #8FE388;
+    height: 100%;
+    flex: 1;
 }

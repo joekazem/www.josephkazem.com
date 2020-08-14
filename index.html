@@ -5,39 +5,47 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Joseph Kazem Site</title>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=BOEING">
+    <!-- <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=BOEING"> -->
     <link rel="stylesheet" href="./style.css">
 </head>
-<header>
-
-    <div class="header">
-        <img class="image" src="./Photo on 11-10-19 at 5.39 PM.jpg">
-        <div class="text-box">
-            <h1>Joseph D. Kazem</h1>
-        </div>
-    </div>
-</header>
-<nav>
-    <div class="container">
-        <ul class="tabs group">
-            <li ><a class="active" href="#About">About</a></li>
-            <li><a class="photo"  href="#Photos">Photos</a></li>
-            <li><a class="port" href="#Portfolio">Portfolio</a></li>
-            <li><a class="resume" href="#Resume">Resume</a></li>
-            <li><a class="contact" href="#Contact">Contact</a></li>
-            <li><a class="git" href="#Github Links">Github Links</a></li>
-        </ul>
-
-    </div>
 
 
-</nav>
 
 <body>
-    
+    <header class="container">
+
+        <div class="header">
+            <img class="image" src="./Photo on 11-10-19 at 5.39 PM.jpg">
+            <div class="text-box">
+                <h1>Joseph D. Kazem</h1>
+            </div>
+        </div>
+    </header>
+    <div class="buttonContainer container">
+        <ul class="tabs group">
+            <li><button id="about" class="active tabButton" >About</button> </button></li>
+            <li><button id="photos" class="photo tabButton" >Photos</button></li>
+            <li><button id="portfolio" class="port tabButton" >Portfolio</button></li>
+            <li><button id="resumes" class="resume tabButton" >Resume</button></li>
+            <li><button id="contactPage" class="contact tabButton" >Contact</button></li>
+            <li><button id="gitHub" class="git tabButton" >Github Links</button></li>
+        </ul>
+    </div>
+
+    <div class="container tabContent"><h1>Under Construction</h1></div>
+    <div class="tabContent hidden">photos: Contant</div>
+        <div class="tabContent hidden">portfolio: Contant</div>
+        <div class="tabContent hidden">resume: Contant</div>
+        <div class="tabsContent hidden">contact: Contant</div>
+        <div class="tabContent hidden">github: Contant</div>
 
 
-   
+
+
+
+
+
+    <script src="./script.js"></script>
 </body>
 
 </html>
