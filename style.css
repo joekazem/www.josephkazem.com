@@ -72,9 +72,9 @@ z-index: 3;
     background-color: #E07A5F;
 }
 
-.hidden {
+/*.hidden {
 display: none;
-}
+}*/
 body {
     display: flex;
     height: 100%;
@@ -88,8 +88,13 @@ body .container {
     flex-direction: column;
     
     }   
-body .tabContent {
+body .tabContentOne {
     background-color: #4F86C6;
+    height: 100%;
+    flex: 1;
+}
+body .tabContenttwo {
+    background-color: #8FE388;
     height: 100%;
     flex: 1;
 }

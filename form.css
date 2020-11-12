@@ -1,0 +1,16 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+.container {
+    height: 80%;
+    width: 80%;
+}
+header {
+    text-align: center;
+    text-decoration: underline red;
+}
+body {
+    background-color: #F4F1DE;
+}
