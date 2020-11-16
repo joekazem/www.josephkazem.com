@@ -1,24 +1,11 @@
-var tabPanel = document.getElementById("tabinformation");
-var buttons = document.querySelectorAll(".tabButton");
-for (var i = 0; i < buttons.length; i++) {
-
-   buttons[i].addEventListener("click", function () {
-         tabPanel.forEach(btn => {
-               btn.classList.add("hidden")
-
-               if (this.getAttribute("id") === "photos") {
-                  tabPanel[1].classList.remove("hidden")
-                  console.log("if triggered")
-               }
-            }
-
-
-         })
-   }
-   var about = document.querySelector(".tabContentOne");
-   window.onload = () => {
-
-      tabPanel.innerHTML = `
+function switchtab(tab) {
+   var informationcontainer = document.getElementById("tabinformationcontainer");
+   var tabinformation = document.getElementById("tabinformation");
+   switch (tab) {
+      case "about":
+         informationcontainer.className = "";
+         informationcontainer.classList.add("container", "about");
+         tabinformation.innerHTML = `
 <h4>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.
 
 The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Egestas pretium aenean pharetra magna ac placerat vestibulum lectus mauris. Sed libero enim sed faucibus turpis in eu mi bibendum. Elit duis tristique sollicitudin nibh sit. Ipsum dolor sit amet consectetur adipiscing elit pellentesque habitant morbi. Sem integer vitae justo eget magna fermentum. Commodo quis imperdiet massa tincidunt nunc pulvinar. Et pharetra pharetra massa massa ultricies mi. Et ultrices neque ornare aenean euismod. Tellus pellentesque eu tincidunt tortor aliquam nulla facilisi cras. Congue quisque egestas diam in arcu cursus. Vitae sapien pellentesque habitant morbi tristique senectus. Magna etiam tempor orci eu lobortis elementum. Tortor at risus viverra adipiscing at in tellus. Volutpat sed cras ornare arcu dui vivamus.
@@ -31,4 +18,32 @@ Eget ma habitant. Ultrices dui sapien eget mi proin. Risus ultricies tristique n
 
 .</h4>
 `
+         break
+      case "photo":
+         informationcontainer.className = "";
+         informationcontainer.classList.add("container", "photo");
+         tabinformation.innerHTML = `<h4>photo goes here</h4> `
+         break
+      case "portfolio":
+         informationcontainer.className = "";
+         informationcontainer.classList.add("container", "portfolio");
+         tabinformation.innerHTML = `<h4>Portfolio info goes here</h4>`
+         break
+      case "resume":
+         informationcontainer.className = "";
+         informationcontainer.classList.add("container", "resume");
+         tabinformation.innerHTML = `<h4>Resume goes here</h4>`
+         break
+      case "contact":
+         informationcontainer.className = "";
+         informationcontainer.classList.add("container", "contact");
+         tabinformation.innerHTML = `<h4>contact info goes here</h4>`
+         break
+      case "github":
+         informationcontainer.className = "";
+         informationcontainer.classList.add("container", "github");
+         tabinformation.innerHTML = `<h4>Github info goes here</h4>`
+         break
    }
+
+}

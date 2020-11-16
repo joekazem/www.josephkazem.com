@@ -35,7 +35,7 @@
 .tabs li {
     float: left;
     position: relative;
-   
+   list-style: none;
 }
 .tabs button {
     float: left;
@@ -56,7 +56,7 @@ z-index: 3;
 .photo {
     background-color: #8FE388 ;
 }
-.active {
+.active, .about {
     background-color: #4F86C6;
 }
 .port {
@@ -93,8 +93,15 @@ body .tabContentOne {
     height: 100%;
     flex: 1;
 }
-body .tabContenttwo {
+/*body .tabContenttwo {
     background-color: #8FE388;
     height: 100%;
     flex: 1;
+}*/
+#tabInformationContainer {
+    min-height: 450px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
